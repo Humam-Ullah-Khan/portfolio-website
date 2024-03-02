@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayee</title>
+    <style>
+        @font-face {
+            font-family: joining;
+            src: url('./holiday-delight/HolidayDelight.otf') format(opentype);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+        }
+
+        .top {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            background-color: #FFFFFF;
+        }
+
+        .logo {
+            margin: 0px 250px 0px 200px;
+            font-family: cursive;
+        }
+
+        .italic {
+            font-family: joining;
+        }
+
+        nav {
+            margin: 20px 0px 0px 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        a {
+            color: #1e1d1d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .second {
+            width: 100%;
+            height: 450px;
+            margin-top: 20px;
+            background-color: #e8e8e8;
+            display: flex;
+        }
+
+        .text {
+            width: 650px;
+            height: 250px;
+            /* background-color: blue; */
+            margin: 100px 0px 0px 200px;
+        }
+
+        .man {
+            margin: 10px 0px 0px 0px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h4 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        button {
+            width: 130px;
+            height: 50px;
+            text-align: center;
+            font-weight: bold;
+            border: none;
+            border-radius: 35px;
+            background-color: #FEC901;
+            margin: 30px 0px 0px 90px;
+            cursor: pointer;
+        }
+
+        .circle {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #FEC901;
+            margin: 35px 0px 0px 620px;
+        }
+
+        .pic {
+            width: 500px;
+            height: 400px;
+            margin: 50px 100px 0px 540px;
+            position: absolute;
+            background-image: url(./1675596-1730291569-removebg-preview.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .black {
+            width: 900px;
+            height: 450px;
+            border-top-left-radius: 150px;
+            background-color: black;
+            margin: 0px 0px 0px 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <h1 class="logo">Trendy<span class="italic">Wears</span></h1>
+        <nav><a href="#">Home</a></nav>
+        <nav><a href="#">Wears</a></nav>
+        <nav><a href="#">Accessories</a></nav>
+    </div>
+    <div class="second">
+        <div class="text">
+            <h1 class="man">Man Jackets</h1>
+            <h4>Explore the taste of your trendy at outrageously <br> affordables prices-use promo code TJ01</h4>
+            <button id="button">Shop Now</button>
+        </div>
+
+        <div class="circle">
+
+        </div>
+        <div class="pic">
+
+        </div>
+        <div class="black">
+
+        </div>
+    </div>
+    <script>
+        var button = document.getElementById('button');
+        button.addEventListener('click', function () {
+            button.style.cursor = "not-allowed";
+        })
+    </script>
+</body>
+
+</html>

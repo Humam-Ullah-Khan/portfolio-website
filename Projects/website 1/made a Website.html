@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body{
+            background-image: url(./R.jfif);
+            background-attachment: fixed;
+        }
+        .Shams{
+            width: 1050px;
+            height: 350px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            /* background-color: green; */
+            background-image: url(https://www.shegeeksout.com/wp-content/uploads/2019/02/company-dei-post.jpg);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-size: cover;
+            background-position:center;
+            background-repeat: no-repeat;
+            padding:15px 0px 0px 200px;
+        }
+        .company{
+            width: 300px;
+            height: 215px;
+            font-weight: bold;
+            color:#ffffff;
+            /* background-color: red; */
+            background: none;
+            padding: 25px 0px 10px 50px;
+        }
+        .company button{
+            color: white;
+            background-color:#209DFB;
+            border: none;
+            width: 100px;
+            height: 25px;
+            cursor: pointer;
+        }
+        .why{
+            color: #FEA93C;
+            /* color: #FED02C; */
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding:0px 0px 0px 500px;
+        }
+        .privacy{
+            width: 230px;
+            height: 200px;
+            /* border: 2px solid red; */
+            /* background-color: green; */
+            margin-left: 210px;
+        }
+        .privacy i{
+            padding:5px 0px 0px 100px;
+            font-size: 25px;
+            color: #1d99f9;
+        }
+        .privacy h3{
+            padding: 0px 0px 0px 50px;
+            font-family: cursive;
+        }
+        .privacy p{
+            padding-left: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .privacy button{
+            width: 100px;
+            height: 25px;
+            background-color: #037ddb;
+            color: #ffffff;
+            border: none;
+            border-radius: 2px;
+            margin-left: 65px;
+            cursor: pointer;
+        }
+        .exp{
+            width: 230px;
+            height: 200px;
+            margin-left: 55px;
+            /* background-color: green; */
+            /* border: 2px solid red; */
+        }
+        .Wajid{
+            display: flex;
+            margin-bottom: 100px;
+            color: white;
+        }
+        .exp i{ 
+            padding:5px 0px 0px 100px;
+            font-size: 25px;
+            color: #1d99f9;
+        }
+        .exp h3{
+            padding: 0px 0px 0px 65px;
+            font-family: cursive;
+        }
+        .exp p{
+            padding-left: 28px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .exp button{
+             width: 100px;
+            height: 25px;
+            background-color: #037ddb;
+            color: #ffffff;
+            border: none;
+            border-radius: 2px;
+            margin-left: 65px;
+            cursor: pointer;
+        }
+        .term{
+            width: 230px;
+            height: 200px;
+            /* background-color: green; */
+            /* border: 2px solid red; */
+            margin-left: 50px;
+        }
+        .term i{
+            padding:5px 0px 0px 110px;
+            font-size: 25px;
+            color: #1d99f9;
+        }
+        .term h3{
+            padding: 0px 0px 0px 40px;
+            font-family: cursive;
+        }
+        .term p{
+            padding-left: 30px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .term button{
+            width: 100px;
+            height: 25px;
+            background-color: #037ddb;
+            color: #ffffff;
+            border: none;
+            border-radius: 2px;
+            margin-left: 65px;
+            cursor: pointer;
+        }
+        .Zaka{
+            display: flex;
+            color: white;
+        }
+        .Work{
+            color: #FED02C;
+            padding:0px 0px 0px 550px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .Con{
+            width: 270px;
+            height: 360px;
+            /* background-color: green; */
+            /* border: 2px solid red; */
+            margin-left: 200px;
+            padding-left: 15px;
+        }
+        .Con img{
+            padding: 5px 0px 0px 30px;
+        }
+        .Con h3{
+            padding: 5px 0px 0px 30px;
+            font-family: cursive;
+        }
+        .Con h5{
+            padding: 5px 0px 0px 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .Con p{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .Con button{
+            width: 100px;
+            height: 25px;
+            background-color: #037ddb;
+            color: #ffffff;
+            border: none;
+            border-radius: 2px;
+            margin-left: 65px;
+            cursor: pointer;
+        }
+        .Hiring{
+            width: 270px;
+            height: 360px;
+            /* background-color: green; */
+            /* border: 2px solid red; */
+            margin-left: 15px;
+        }
+        .Hiring img{
+            padding: 5px 0px 0px 27px;
+        }
+        .Hiring h3{
+            padding: 5px 0px 0px 30px;
+            font-family: cursive;
+        }
+        .Hiring h5{
+            padding: 5px 0px 0px 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .Hiring p{
+            margin: 6px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .Hiring button{
+            width: 100px;
+            height: 25px;
+            background-color: #037ddb;
+            color: #ffffff;
+            border: none;
+            border-radius: 2px;
+            margin-left: 65px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .testing{
+            width: 270px;
+            height: 360px;
+            /* background-color: green; */
+            /* border: 2px solid red; */
+            margin-left: 15px;
+        }
+        .testing img{
+            padding: 5px 0px 0px 27px;
+        }
+        .testing h3{
+            padding: 5px 0px 0px 30px;
+            font-family: cursive;
+        }
+        .testing h5{
+            padding: 5px 0px 0px 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .testing p{
+            margin: 6px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .testing button{
+            width: 100px;
+            height: 25px;
+            background-color: #037ddb;
+            color: #ffffff;
+            border: none;
+            border-radius: 2px;
+            margin-left: 65px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .contact h4{
+            color: rgb(0, 247, 255);
+        padding-left: 350px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .contact a{
+            text-decoration: none;
+        }
+        .contact a:hover{
+            text-decoration: underline;
+            color: rgb(0, 247, 255) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="Shams">
+        <div class="company">
+            <H1>Company Tempalte</H1>
+            <h3>We help organizations to hire,<br>satisfy,motivate,and retain<br> thier empolyees</h3>
+            <button>Learn more</button>
+        </div>
+    </div>
+    <div class="why">
+        <h1>
+            <b>
+                Why Choose Us
+            </b>
+        </h1>
+    </div>
+    <div class="Wajid">
+    <div class="privacy">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Privacy Matters</h3>
+        <p> Lorem ipsum dolor sit, amet <br>consectetur adipisicing elit. <br> Fugiat sapiente ullam, placeat.</p>
+        <button>Read more</button>
+    </div>
+    <div class="exp">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Experience</h3>
+        <p>Lorem ipsum dolor,sit in <br>amet consectetur adipise elit. <br> Adipisci, quia here !</p>
+        <button>Read more</button>
+    </div>
+    <div class="term">
+        <i class="fa-solid fa-camera"></i>
+        <h3>Various terms Length</h3>
+        <p>Lorem ipsum dolor, sit in the amet consectetur elit. Asperiores, dolorem.here!</p>
+        <button>Read more</button>
+    </div>
+    </div>
+    <div class="Work">
+        <H1>Our Work</H1>
+    </div>
+                                     <!-- New Line -->
+    <div class="Zaka">
+        <Div class="Con">
+            <img src="https://img.freepik.com/free-photo/online-school-equipment-home_23-2149041143.jpg?size=626&ext=jpg&ga=GA1.1.1518270500.1698537600&semt=ais" width="180px" height="100px">
+            <h3>HR Consulting</h3>
+            <h5>Experiment of Cosulting</h5>
+            <p>Lorem ipsum dolor sit amet,consectetur<br>adipise elit. A nostrum laboriosam<br>maxime in our field.</p>
+            <button>Read more</button>
+        </Div>
+        <div class="Hiring">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9mZmljZSUyMGpvYnxlbnwwfHwwfHx8MA%3D%3D" width="180px" height="100px" >
+            <h3>Hiring</h3>
+            <h5>Experiment of Hiring</h5>
+            <p>Lorem ipsum dolor sit amet,consectetur<br>adipise elit. A nostrum laboriosam<br>maxime in our field.</p>
+            <button>Read more</button>
+        </div>
+        <div class="testing">
+            <img src="https://www.aps.com/-/media/APS/APSCOM-Images/Global/Hero-Images-6-3-19/Studying_16x9.ashx?la=en&h=901&w=1601&la=en&hash=D1FAC7F42FFE7961802EF46C7D743CD2" width="180px" height="100px">
+            <h3>Employment Testing</h3>
+            <h5>Experiment of Testing</h5>
+            <p>Lorem ipsum dolor sit amet,consectetur<br>adipise elit. A nostrum laboriosam<br>maxime in our field.</p>
+            <button>Read more</button>
+        </div>
+    </div>
+                                 <!-- For Contact -->
+    <div class="contact">
+    <a href="mailto:humamullahkhan002@gmail.com"><h4>Contact Us</h4></a>
+    </div>
+</body>
+</html>
