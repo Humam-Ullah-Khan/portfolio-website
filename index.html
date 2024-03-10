@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home-Page</title>
     <style>
         * {
@@ -84,31 +87,53 @@
             padding-left: 40px;
             text-decoration: none;
         }
+
+        .fa-volume-high {
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
-    
-    <nav>
-        <a class="navigation" href="./Projects Page/Projects.html">Projects</a>
-        <a class="navigation" href="./Skills Page/Skill.html">Skills</a>
-        <a class="navigation" href="./Contact Page/contact.html">Contacts</a>
-        <a class="navigation" href="./Registration Form/index.html">Forms</a>
-    </nav>
-    <img src="./picture/350115712_593942726166288_8919996105477500241_n.jpg" alt="My Pic" width="200px" height="200px"
-        style="border-radius: 50%; border: 5px solid rgb(182, 176, 176);">
-    <h1>
-        Hello ,
-        <br>
-        I am Humam Ullah Khan
-    </h1>
-    <h2>
-        Front-End Web Developer
-    </h2>
-    <p>I have 2 months experience in the web development industry , And have maked some simple websites. </p>
+    <header>
+        <nav>
+            <a class="navigation" href="./Projects Page/Projects.html">Projects</a>
+            <a class="navigation" href="./Skills Page/Skill.html">Skills</a>
+            <a class="navigation" href="./Contact Page/contact.html">Contacts</a>
+        </nav>
+    </header>
+
+    <section>
+        <img src="./picture/350115712_593942726166288_8919996105477500241_n.jpg" alt="My Pic" width="200px"
+            height="200px" style="border-radius: 50%; border: 5px solid rgb(182, 176, 176);">
+
+        <h1>
+            Hello ,
+            <br>
+            I am Humam Ullah Khan
+            <audio autoplay id="myName"></audio>
+            <i class="fa-solid fa-volume-high" onclick="pronounce()"></i>
+        </h1>
+
+        <h2>
+            Front-End Web Developer
+        </h2>
+
+        <p>I have 2 months experience in the web development industry , And have maked some simple websites. </p>
+
+    </section>
+
     <button class="email"><a class="hayee" href="mailto:humamullahkhan001@gmail.com">Email</a></button>
+
     <button class="linkedin"><a class="hayee"
             href="https://www.linkedin.com/in/humam-ullah-khan-9899b82b2/">linkedin</a></button>
+
+    <script>
+        function pronounce() {
+            var myName = document.getElementById('myName');
+            myName.src = './Audio/Recording.m4a';
+        }
+    </script>
 </body>
 
 </html>
